@@ -202,7 +202,7 @@ async def callback(client, msg: CallbackQuery):
 async def repo_cmd(client, msg):
     await msg.reply_text(
         text=f"""𝙷𝚎𝚕𝚕𝚘,{msg.from_user.mention}\n𝙼𝚢 𝚛𝚎𝚙𝚘""",
-        reply_markup=InlineKeyboardMarkup(repo_data)
+        reply_markup=InlineKeyboardMarkup(repo)
     )
 
 
