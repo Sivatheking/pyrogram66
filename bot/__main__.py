@@ -194,24 +194,18 @@ async def callback(client, msg: CallbackQuery):
 
     elif msg.data == "repo":
         await msg.message.edit(
-            text="Hell",
-            reply_markup=InlineKeyboardMarkup(Source_code)
-        )
+            text=f"""𝙷𝚎𝚕𝚕𝚘 {msg.from_user.mention}\n 𝙼𝚢 𝙽𝚊𝚖𝚎 𝙸𝚜 𝚙𝚢𝚛𝚘𝚐𝚛𝚊𝚖 𝙼𝚢 𝚜𝚘𝚞𝚛𝚌𝚎 𝚌𝚘𝚍𝚎 𝚐𝚒𝚟𝚎 𝚋𝚎𝚕𝚘𝚠... \𝚗 𝙽𝚘𝚝𝚎 » 𝙼𝚢 𝙿𝚛𝚘𝚌𝚎𝚜𝚜 𝙽𝚘𝚝 𝙵𝚒𝚗𝚒𝚜𝚑𝚎𝚍 """,
 
 @Siva.on_message(filters.command("repo"))
 async def repo_cmd(client, msg):
     await msg.reply_text(
         text=f"""𝙷𝚎𝚕𝚕𝚘,{msg.from_user.mention}\n𝙼𝚢 𝚛𝚎𝚙𝚘""",
-        reply_markup=InlineKeyboardMarkup(repo_data)
+        reply_markup=InlineKeyboardMarkup(Source_code)
     )
 
 Source_code = [[
  InlineKeyboardButton("💻 repo", url="https://github.com/Sivatheking/pyrogram")
 ]]
-
-repo_data = [[
- InlineKeyboardButton("💻 repo", callback_data="repo")
-]]      
 
 
 
