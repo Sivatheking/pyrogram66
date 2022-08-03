@@ -8,9 +8,9 @@ import script
 
 Siva = Client(
    name="PyrogramBot",
-   bot_token = os.environ["BOT_TOKEN"],
-    api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"],
+   bot_token = os.environ["BOT_TOKEN", "2111995272:AAFEOruoC3oPnfBxXgOvnUUdokmWQWBfb2w"],
+    api_id = int(os.environ["API_ID", 9364978]),
+    api_hash = os.environ["API_HASH", "da2747badec9fd8a8722ea5c13850751"],
 )
 
 
