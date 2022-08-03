@@ -194,7 +194,7 @@ async def callback(client, msg: CallbackQuery):
 
     elif msg.data == "repo":
         await msg.message.edit(
-            text="our 𝚛𝚎𝚙𝚘 𝚞𝚗𝚍𝚎𝚛 𝚋𝚞𝚝𝚝𝚘𝚗",
+            text="Hell",
             reply_markup=InlineKeyboardMarkup(Source_code)
         )
 
@@ -202,16 +202,15 @@ async def callback(client, msg: CallbackQuery):
 async def repo_cmd(client, msg):
     await msg.reply_text(
         text=f"""𝙷𝚎𝚕𝚕𝚘,{msg.from_user.mention}\n𝙼𝚢 𝚛𝚎𝚙𝚘""",
-        reply_markup=InlineKeyboardMarkup(repo)
+        reply_markup=InlineKeyboardMarkup(repo_data)
     )
-
 
 Source_code = [[
  InlineKeyboardButton("💻 repo", url="https://github.com/Sivatheking/pyrogram")
 ]]
 
 repo_data = [[
- InlineKeyboardButton("💻 repo", callback_data="repo_data")
+ InlineKeyboardButton("💻 repo", callback_data="repo")
 ]]      
 
 
